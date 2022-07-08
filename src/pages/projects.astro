@@ -1,9 +1,17 @@
 ---
 import Layout from '~/layouts/Layout.astro';
+
+import ProjectsIntro from '~/components/sections/ProjectsIntro.astro';
+
+import ExampleProj from '~/components/projects/example.astro';
+import StackCalcProj from '~/components/projects/mcstackcalc.astro';
 ---
 
 <Layout title="Nelertile - Projects">
     <main>
-
+        <ProjectsIntro />
+        <div class="p-4 grid grid-cols-4 grid-rows-4 gap-6 rounded-xl">
+            <StackCalcProj />
+        </div>
     </main>
 </Layout>
