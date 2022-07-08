@@ -1,9 +1,21 @@
 ---
 import Layout from '~/layouts/Layout.astro';
+
+import GamingIntro from '~/components/sections/GamingIntro.astro';
+
+import ExampleGame from '~/components/games/example.astro';
+import GenshinImpact from '~/components/games/genshinimpact.astro';
+import Terraria from '~/components/games/terraria.astro';
+import Minecraft from '~/components/games/minecraft.astro';
 ---
 
 <Layout title="Nelertile - Gaming">
     <main>
-
+        <GamingIntro />
+        <div class="p-4 grid grid-cols-4 grid-rows-4 gap-6 rounded-xl">
+            <GenshinImpact />
+            <Terraria />
+            <Minecraft />
+        </div>
     </main>
 </Layout>
